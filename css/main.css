@@ -12,8 +12,6 @@ body {
 .content-wrapper {
 	max-width: 1200px;
 	width: 90%;
-	margin: 0 auto;
-	overflow: auto;
 	display: flex;
 	justify-content: center;
     flex-flow: row wrap;
@@ -57,7 +55,6 @@ header {
 }
 
 header h1 {
-	float: left;
 	margin: 0;
 	padding: 38px 0 20px 0;
 	border-bottom: 3px solid #77A466;
@@ -170,4 +167,66 @@ footer span {
 	text-transform: lowercase;
 	color: #45610E;
 	font-size: .875rem;
+}
+
+@media all and (min-width: 768px) {
+	/* The widths are in a percentage! */
+	.main-title h2 {
+		font-size: 2.5em;
+	}
+
+	.main-image img {
+		width: 100%;
+	}
+
+	.section-one {
+		width: 29%;
+	}
+
+	.section-two {
+		width: 42%;
+	}
+
+	.section-three {
+		width: 29%;
+	}
+
+	.bottom-section h3 {
+		font-size: 2em;
+	}
+
+	.menu-list li {
+		font-size: 1.25rem;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	/* The widths are in a percentage! */
+	.main-title h2 {
+		font-size: 3em;
+	}
+
+	.main-image img {
+		width: 100%;
+	}
+
+	.section-one {
+		width: 29%;
+	}
+
+	.section-two {
+		width: 42%;
+	}
+
+	.section-three {
+		width: 29%;
+	}
+
+	.bottom-section h3 {
+		font-size: 2.5em;
+	}
+
+	.menu-list li {
+		font-size: 1.5rem;
+	}
 }
