@@ -124,19 +124,16 @@ header nav ul li a {
 
 .section-one {
 	width: 100%;
-	/* That was the prevous width: 29%; */
 }
 
 .section-two {
 	width: 100%;
-	/* That was the prevous width: 42%; */
 	border-left: 5px solid #EEE;
 	border-right: 5px solid #EEE;
 }
 
 .section-three {
 	width: 100%;
-	/* That was the prevous width: 29%; */
 }
 
 .bottom-section h3 {
@@ -169,64 +166,57 @@ footer span {
 	font-size: .875rem;
 }
 
+/******** TABLET MEDIA QUERY ********/
 @media all and (min-width: 768px) {
-	/* The widths are in a percentage! */
-	.main-title h2 {
-		font-size: 2.5em;
-	}
-
-	.main-image img {
-		width: 100%;
-	}
-
-	.section-one {
-		width: 29%;
+	
+    .section-one {
+		width: 26%;
 	}
 
 	.section-two {
-		width: 42%;
+		width: 40%;
+		border-left: 5px solid #EEE;
+		border-right: 5px solid #EEE;
+		border-top: none;
+		border-bottom: none;
+		padding: 0 30PX;
 	}
 
 	.section-three {
-		width: 29%;
+		width: 26%;
 	}
 
-	.bottom-section h3 {
-		font-size: 2em;
-	}
-
-	.menu-list li {
-		font-size: 1.25rem;
+	.bottom-section .content-wrapper {
+		justify-content: space-evenly;
 	}
 }
-
+ 
+/******** DESKTOP MEDIA QUERY ********/
 @media all and (min-width: 1200px) {
-	/* The widths are in a percentage! */
-	.main-title h2 {
-		font-size: 3em;
+   
+    body{  
+		font-size: 1em;
 	}
 
-	.main-image img {
-		width: 100%;
+	header .content-wrapper {
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 0;
 	}
 
-	.section-one {
-		width: 29%;
+	header h1 {
+	    padding: 0;
+	    border-bottom: none;
+	    width: 30%;
+		text-align: left;
 	}
 
-	.section-two {
-		width: 42%;
+	header nav {
+		width: 21%;
 	}
 
-	.section-three {
-		width: 29%;
-	}
-
-	.bottom-section h3 {
-		font-size: 2.5em;
-	}
-
-	.menu-list li {
-		font-size: 1.5rem;
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
 	}
 }
